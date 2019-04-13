@@ -1,7 +1,8 @@
 package com.runner;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
 
 @CucumberOptions(
         features = "src/test/resources/features",
@@ -13,6 +14,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
                 "json:target/cucumber-reports/json-reports/CucumberTestReport.json",
                 "rerun:target/cucumber-reports/rerun-reports/rerun.txt"
         })
-public class TestRunner extends AbstractTestNGCucumberTests{
+@RunWith(Cucumber.class)
+public class TestRunner {
 
 }

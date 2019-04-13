@@ -9,7 +9,7 @@ import cucumber.api.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Assert;
+import org.junit.Assert;
 
 import java.net.MalformedURLException;
 import java.net.URL;
